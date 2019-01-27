@@ -60,6 +60,44 @@
 			</div>
 		</div>
 	</div>
+	<!-- Result modal output -->
+	<div class="ui basic modal">
+  <div class="ui icon header">
+    <i class="archive icon"></i>
+    Results
+  </div>
+  <div class="content">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<img src="https://images.cdn1.stockunlimited.net/clipart/high-temperature_2001835.jpg"
+			 height="200" width="200" class="img img-responsive decisionimage gapper" />
+			 <h2 class=result> Temperature </h2>
+  </div>
+	<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+		<img src="https://images.cdn2.stockunlimited.net/clipart/wind-and-cloud_1326844.jpg"
+	 height="200" width="200" class="img img-responsive decisionimage gapper" />
+	 <h2 class=result> Wind Speed <h2>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+	<img src="https://images.cdn2.stockunlimited.net/clipart/sun-icon_1984688.jpg"
+ height="200" width="200" class="img img-responsive decisionimage gapper" />
+ <h2 class=result> Sunlight <h2>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+	<img src="https://cleanbrightsolarsantaclaritasolarpanelcleaning.files.wordpress.com/2018/10/cropped-sun-solar-panel-1.jpg?w=200"
+	 height="200" width="200" class="img img-responsive decisionimage gapper" />
+	 <h2 class=result> Solar Panel <h2>
+</div>
+</div>
+</div>
+  <div class="actions">
+    <div class="ui green ok inverted button">
+      <i class="checkmark icon"></i>
+      Ok
+    </div>
+  </div>
+</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
 	 crossorigin="anonymous">
@@ -69,7 +107,9 @@
 	<script src="semantic/dist/semantic.min.js"></script>
 	<script>
 		$(".ui.dropdown").dropdown();
+		$('.ui.basic.modal').modal('show');
 	</script>
+
 	<script type="text/javascript" src="js/Citiesname.js"></script>
 	<script type="text/javascript" src="js/bot_animation.js"></script>
 </body>

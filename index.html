@@ -6,118 +6,57 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	 crossorigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-	<style media="screen">
-		.baseDiv{
-			height:300px;
-			/* background-color: red; */
-		}
-		.userInstruction{
-			background-color: rgba(0,0,0,0.8);
-			position: relative;
-
-		}
-		.userInput{
-			background-color: rgba(0,0,0,0.8);
-
-		}
-		.outputImage{
-			background-color: rgba(0,0,0,0.8);
-		}
-
-		.elements{
-			margin-top: 20%;
-		}
-		.elements2{
-			margin-top: 10%;
-			display: flex;
-			justify-content: center;
-		}
-		.locationText{
-			position: absolute;
-			top:24%;
-			left: 0;
-			right: 0;
-			/* margin-top: : 12%; */
-			text-align: center;
-		}
-
-		.locationText h2 {
-			font-style: normal;
-			font-size: 40px;
-			font-weight: bold;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			color: white;
-		}
-
-		.decisionimage{
-			border: 1px white solid;
-			border-radius: 50%;
-			justify-content: center;
-			display: block;
-			margin: 30px auto;
-			object-fit: scale-down;
-		}
-
-		.answer{
-			position: relative;
-			text-align: center;
-			bottom: 5%;
-			color: white;
-			font-size: 16px;
-			font-weight: bold;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		}
-
-		body{
-			background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/green-energy-concept-background-loop-colorful-cartoon-green-ecology-flat-landscape-with-wind-power-plant-and-sailing-boat-with-space-for-your-message-or-logo-seam-less-loop-full-hd-and-4k_rjrpwpw___F0005.png);
-			background-attachment: fixed;
-			background-size: contain;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
-	<!-- Body of html page -->
 	<div class="container-fluid">
-		<div class="row baseDiv">
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 userInstruction">
-				<div class="locationText">
-         <h2 class="text-center"> Enter your location </h2>
-				 <img src="http://pluspng.com/img-png/png-pointing-finger-pointing-finger-png-image-43096-878.png"
- 			     	height="100"
- 				    width="150"
- 			    	class="img img-responsive"
- 				/>
-			 </div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 userInput">
-				<div class="elements">
-				<div class="ui fluid search selection dropdown">
-					<input type="hidden" name="country">
-					<i class="dropdown icon"></i>
-					<div class="default text">Select City</div>
-					<div class="menu" id="menu-items"></div>
+		<div class="row mainSection">
+			<div class="row backgroundSection"></div>
+			<div class="row introSection">
+				<div class="col-xs-12 col-sm-12 col-lg-6 col-md-12 webNameText">
+					<h3>Energy Buddy</h3>
+					<p> Renewable Energy Planner</p>
 				</div>
+				<div class="col-xs-12 col-sm-12 col-lg-6 col-md-12">
+					<img class="img-fluid img-responsive bot-image" height="150" width="150" src="https://fcit.usf.edu/matrix/wp-content/uploads/2017/01/AngryBotFlat-Sm.png" />
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+		<div class="row baseDiv">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 userInstruction">
+				<div class="locationText">
+					<h2 class="text-center"> Enter your location </h2>
+					<img src="http://pluspng.com/img-png/png-pointing-finger-pointing-finger-png-image-43096-878.png" height="100"
+					 width="150" class="img img-responsive" />
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 userInput">
+				<div class="elements">
+					<div class="ui fluid search selection dropdown">
+						<input type="hidden" name="country">
+						<i class="dropdown icon"></i>
+						<div class="default text"><b>Select City</b></div>
+						<div class="menu" id="menu-items"></div>
+					</div>
 				</div>
 
 				<div class="elements2">
-				<div class="ui animated button" tabindex="0">
-  				<div class="visible content">Suggest</div>
-  				<div class="hidden content">
-    			<i class="right arrow icon"></i>
-  				</div>
-		   	</div>
+					<div class="ui animated button" tabindex="0">
+						<div class="visible content">Suggest</div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
+						</div>
+					</div>
 
-			</div>
+				</div>
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 outputImage">
-         <img src="https://cleanbrightsolarsantaclaritasolarpanelcleaning.files.wordpress.com/2018/10/cropped-sun-solar-panel-1.jpg?w=200"
-				 height="200"
-				 width="200"
-				 class="img img-responsive decisionimage"
-				 />
-				 <h4 class="answer"> Solar Panel is the way to go! </h4>
+				<img src="https://cleanbrightsolarsantaclaritasolarpanelcleaning.files.wordpress.com/2018/10/cropped-sun-solar-panel-1.jpg?w=200"
+				 height="200" width="200" class="img img-responsive decisionimage" />
+				<h4 class="answer"> Solar Panel is the way to go! </h4>
 			</div>
 		</div>
 	</div>
@@ -131,9 +70,8 @@
 	<script>
 		$(".ui.dropdown").dropdown();
 	</script>
-
-	<script type="text/javascript" src="js/Citiesname.js">
-	</script>
+	<script type="text/javascript" src="js/Citiesname.js"></script>
+	<script type="text/javascript" src="js/bot_animation.js"></script>
 </body>
 
 </html>

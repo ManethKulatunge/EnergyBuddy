@@ -119,7 +119,6 @@ var citiesArr = [
 ];
 
 $.each(citiesArr, function (key, value) {
-  console.log(key + "  :" + value.flag);
   const ele = "<div class='item' data-value='" + value.flag + "'><i class=\"" + value.flag + " flag\"></i>" + value.name +
     "</div>";
   $("#menu-items").append(ele);

@@ -1,0 +1,138 @@
+body {
+    background: url("../images/background.png");
+    background-attachment: fixed;
+    background-size: contain;
+    clear: both;
+}
+
+/* First Section Css Design  */
+
+.mainSection {
+    position: absolute;
+    height: 60%;
+    left: 0;
+    right: 0;
+    background: url("https://cdn.vox-cdn.com/thumbor/hAp9VlAz2hICFS1-UBN4o6ehgKo=/0x0:1200x700/1200x675/filters:focal(496x194:688x386):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62600153/LEAD_ART.1543576082.gif");
+    background-size: cover;
+}
+
+.backgroundSection {
+    backface-visibility: visible;
+    opacity: 0.8;
+}
+
+.introSection {
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: rgba(0, 0, 0, 80%);
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+
+.webNameText {
+    position: relative;
+    top: 35%;
+}
+
+.webNameText h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 3px 4px black;
+}
+
+.webNameText p {
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 3px 4px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.bot-image {
+    display: flex;
+    margin: 6% auto;
+    transition: transform .8s;
+}
+
+/* Second Section Design */
+
+.baseDiv {
+    position: absolute;
+    /* margin-top:28%; */
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+}
+
+.userInstruction {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.userInput {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.outputImage {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.elements {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 25%;
+}
+
+.elements2 {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.locationText {
+    position: absolute;
+    top: 24%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.locationText h2 {
+    font-style: normal;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.decisionimage {
+    border: 1px white solid;
+    border-radius: 50%;
+    justify-content: center;
+    display: block;
+    margin: 30px auto;
+    object-fit: scale-down;
+}
+
+.answer {
+    position: relative;
+    text-align: center;
+    bottom: 5%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::placeholder {
+    color: black;
+}

@@ -10,6 +10,12 @@
 </head>
 
 <body>
+	<div class="preloader">
+		<div class="preloader-content">
+			<img src="images/preload_bot.gif" height="200" width="200" class="img img-fluid preload-robot" />
+			<h4 class="preload-text"> Analysing.... </h4>
+		</div>
+	</div>
 	<div class="container-fluid">
 		<div class="row mainSection">
 			<div class="row backgroundSection"></div>
@@ -19,17 +25,15 @@
 					<p> Renewable Energy Planner</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-lg-6 col-md-12">
-					<img class="img-fluid img-responsive bot-image" height="150" width="150" src="https://fcit.usf.edu/matrix/wp-content/uploads/2017/01/AngryBotFlat-Sm.png" />
+					<img class="img-fluid img-responsive bot-image" height="150" width="150" src="images/dance-robot.png" />
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
 		<div class="row baseDiv">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 userInstruction">
 				<div class="locationText">
 					<h2 class="text-center"> Enter your location </h2>
-					<img src="http://pluspng.com/img-png/png-pointing-finger-pointing-finger-png-image-43096-878.png" height="100"
-					 width="150" class="img img-responsive" />
+					<img src="images/hand_pointer.png" height="100" width="150" class="img img-responsive" />
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 userInput">
@@ -41,62 +45,60 @@
 						<div class="menu" id="menu-items"></div>
 					</div>
 				</div>
-
+				<span class="text-danger error"><b>* Select city</b></span>
 				<div class="elements2">
-					<div class="ui animated button" tabindex="0">
+					<div class="ui animated button request-sender" tabindex="0">
 						<div class="visible content">Suggest</div>
 						<div class="hidden content">
 							<i class="right arrow icon"></i>
 						</div>
 					</div>
-
 				</div>
+
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 outputImage">
-				<img src="https://cleanbrightsolarsantaclaritasolarpanelcleaning.files.wordpress.com/2018/10/cropped-sun-solar-panel-1.jpg?w=200"
-				 height="200" width="200" class="img img-responsive decisionimage" />
-				<h4 class="answer"> Solar Panel is the way to go! </h4>
+				<img src="images/questions.png" height="200" width="200" class="img img-responsive decisionimage resultImage" />
+				<h4 class="answer"> Solar or Wind ? </h4>
 			</div>
 		</div>
 	</div>
 	<!-- Result modal output -->
 	<div class="ui basic modal">
-  <div class="ui icon header">
-    <i class="archive icon"></i>
-    Results
-  </div>
-  <div class="content">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-				<img src="https://images.cdn1.stockunlimited.net/clipart/high-temperature_2001835.jpg"
-			 height="200" width="200" class="img img-responsive decisionimage gapper" />
-			 <h2 class=result> Temperature </h2>
-  </div>
-	<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-		<img src="https://images.cdn2.stockunlimited.net/clipart/wind-and-cloud_1326844.jpg"
-	 height="200" width="200" class="img img-responsive decisionimage gapper" />
-	 <h2 class=result> Wind Speed <h2>
-</div>
-<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-	<img src="https://images.cdn2.stockunlimited.net/clipart/sun-icon_1984688.jpg"
- height="200" width="200" class="img img-responsive decisionimage gapper" />
- <h2 class=result> Sunlight <h2>
-</div>
-<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-	<img src="https://cleanbrightsolarsantaclaritasolarpanelcleaning.files.wordpress.com/2018/10/cropped-sun-solar-panel-1.jpg?w=200"
-	 height="200" width="200" class="img img-responsive decisionimage gapper" />
-	 <h2 class=result> Solar Panel <h2>
-</div>
-</div>
-</div>
-  <div class="actions">
-    <div class="ui green ok inverted button">
-      <i class="checkmark icon"></i>
-      Ok
-    </div>
-  </div>
-</div>
+		<div class="ui icon header">
+			<i class="archive icon"></i>
+			Results
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<img src="images/temperature.jpg" height="150" width="150" class="img img-responsive decisionimage gapper" />
+					<h2 class="result"> Temperature</h2>
+					<p class="temp-text text-center">25.00-0-0 </p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<img src="images/wind.jpg" height="150" width="150" class="img img-responsive decisionimage gapper" />
+					<h2 class="result"> Wind Speed </h2>
+					<p class="wind-text text-center">25.00-0-0 </p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<img src="images/sunlight.jpg" height="150" width="150" class="img img-responsive decisionimage gapper" />
+					<h2 class="result"> Sunlight </h2>
+					<p class="sunlight-text text-center">25.00-0-0 </p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 solution">
+					<img src="images/solar.jpg" height="180" width="180" class="img img-responsive decisionimage gapper alertResultImage" />
+					<h2 class="result-text result"> Solar Panel </h2>
+				</div>
+			</div>
+		</div>
+		<div class="actions">
+			<div class="ui green ok inverted button">
+				<i class="checkmark icon"></i>
+				Ok
+			</div>
+		</div>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -106,12 +108,40 @@
 	 crossorigin="anonymous"></script>
 	<script src="semantic/dist/semantic.min.js"></script>
 	<script>
-		$(".ui.dropdown").dropdown();
-		$('.ui.basic.modal').modal('show');
+		$(document).ready(function () {
+			$(".ui.dropdown").dropdown();
+			$('.ui.basic.modal').modal('hide');
+			$('.request-sender').on('click', function () {
+				var city = $("input[name='country']").val();
+				if (city == "" || city == null) {
+					$(".error").css("display", "block");
+				} else {
+					$(".error").css("display", "none");
+					getSuggestion(city, function (data) {
+						if (data == null) {
+							alert("Received Null Data");
+						} else {
+							$('.temp-text').text(data.Temperature);
+							$('.wind-text').text(data.Wind_Speed);
+							$('.sunlight-text').text(data.Sunlight);
+							$('.result-text').text(data.Result);
+							$('h4.answer').text(data.Result);
+							if (data.Result == "Wind") {
+								$(".resultImage,.alertResultImage").attr("src", "images/wind-turbine.jpg");
+							} else {
+								$(".resultImage,.alertResultImage").attr("src", "images/solar.jpg");
+							}
+							$('.ui.basic.modal').modal('show');
+							console.log(data);
+						}
+					});
+				}
+			});
+		});
 	</script>
-
 	<script type="text/javascript" src="js/Citiesname.js"></script>
 	<script type="text/javascript" src="js/bot_animation.js"></script>
+	<script type="text/javascript" src="api/getResult.js"></script>
 </body>
 
 </html>

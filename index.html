@@ -32,7 +32,7 @@
 		<div class="row baseDiv">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 userInstruction">
 				<div class="locationText">
-					<h2 class="text-center"> Enter your location </h2>
+					<h2 class="text-center"> Select your location </h2>
 					<img src="images/hand_pointer.png" height="100" width="150" class="img img-responsive" />
 				</div>
 			</div>
@@ -131,7 +131,14 @@
 							} else {
 								$(".resultImage,.alertResultImage").attr("src", "images/solar.jpg");
 							}
-							$('.ui.basic.modal').modal('show');
+							$('.ui.basic.modal').modal({
+								closable: false,
+								onApprove: function () {
+									setInterval(function () {
+										$(".resultImage").attr("src", "images/questions.png");
+									}, 1500);
+								}
+							}).modal('show');
 							console.log(data);
 						}
 					});

@@ -9,21 +9,69 @@
 	<style media="screen">
 		.baseDiv{
 			height:300px;
-			background-color: red;
+			/* background-color: red; */
 		}
 		.userInstruction{
-			background-color: white;
+			background-color: rgba(0,0,0,0.8);
+			position: relative;
+
 		}
 		.userInput{
-			background-color: yellow;
+			background-color: rgba(0,0,0,0.8);
 
 		}
 		.outputImage{
-			background-color: olive;
+			background-color: rgba(0,0,0,0.8);
 		}
 
 		.elements{
 			margin-top: 20%;
+		}
+		.elements2{
+			margin-top: 10%;
+			display: flex;
+			justify-content: center;
+		}
+		.locationText{
+			position: absolute;
+			top:24%;
+			left: 0;
+			right: 0;
+			/* margin-top: : 12%; */
+			text-align: center;
+		}
+
+		.locationText h2 {
+			font-style: normal;
+			font-size: 40px;
+			font-weight: bold;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: white;
+		}
+
+		.decisionimage{
+			border: 1px white solid;
+			border-radius: 50%;
+			justify-content: center;
+			display: block;
+			margin: 30px auto;
+			object-fit: scale-down;
+		}
+
+		.answer{
+			position: relative;
+			text-align: center;
+			bottom: 5%;
+			color: white;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		body{
+			background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/green-energy-concept-background-loop-colorful-cartoon-green-ecology-flat-landscape-with-wind-power-plant-and-sailing-boat-with-space-for-your-message-or-logo-seam-less-loop-full-hd-and-4k_rjrpwpw___F0005.png);
+			background-attachment: fixed;
+			background-size: contain;
 		}
 	</style>
 </head>
@@ -32,25 +80,44 @@
 	<!-- Body of html page -->
 	<div class="container-fluid">
 		<div class="row baseDiv">
-			<div class="col-4 userInstruction">
-
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 userInstruction">
+				<div class="locationText">
+         <h2 class="text-center"> Enter your location </h2>
+				 <img src="http://pluspng.com/img-png/png-pointing-finger-pointing-finger-png-image-43096-878.png"
+ 			     	height="100"
+ 				    width="150"
+ 			    	class="img img-responsive"
+ 				/>
+			 </div>
 			</div>
-			<div class="col-4 userInput">
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 userInput">
 				<div class="elements">
 				<div class="ui fluid search selection dropdown">
 					<input type="hidden" name="country">
 					<i class="dropdown icon"></i>
-					<div class="default text">Select Country</div>
-					<div class="menu">
-						<div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
-						<div class="item" data-value="us"><i class="us flag"></i>United States</div>
+					<div class="default text">Select City</div>
+					<div class="menu" id="menu-items"></div>
+				</div>
+				</div>
 
-					</div>
-				</div>
-				</div>
+				<div class="elements2">
+				<div class="ui animated button" tabindex="0">
+  				<div class="visible content">Next</div>
+  				<div class="hidden content">
+    			<i class="right arrow icon"></i>
+  				</div>
+		   	</div>
+
 			</div>
-			<div class="col-4 outputImage">
+			</div>
 
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 outputImage">
+         <img src="https://cleanbrightsolarsantaclaritasolarpanelcleaning.files.wordpress.com/2018/10/cropped-sun-solar-panel-1.jpg?w=200"
+				 height="200"
+				 width="200"
+				 class="img img-responsive decisionimage"
+				 />
+				 <h4 class="answer"> Solar Panel is the way to go! </h4>
 			</div>
 		</div>
 	</div>
@@ -61,11 +128,12 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 	 crossorigin="anonymous"></script>
 	<script src="semantic/dist/semantic.min.js"></script>
-	<script type="text/javascript">
-	$('.ui.dropdown')
-	.dropdown();
+	<script>
+		$(".ui.dropdown").dropdown();
 	</script>
 
+	<script type="text/javascript" src="js/Citiesname.js">
+	</script>
 </body>
 
 </html>

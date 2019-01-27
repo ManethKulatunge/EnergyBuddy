@@ -6,11 +6,53 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	 crossorigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<style media="screen">
+		.baseDiv{
+			height:300px;
+			background-color: red;
+		}
+		.userInstruction{
+			background-color: white;
+		}
+		.userInput{
+			background-color: yellow;
+
+		}
+		.outputImage{
+			background-color: olive;
+		}
+
+		.elements{
+			margin-top: 20%;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- Body of html page -->
 	<div class="container-fluid">
+		<div class="row baseDiv">
+			<div class="col-4 userInstruction">
+
+			</div>
+			<div class="col-4 userInput">
+				<div class="elements">
+				<div class="ui fluid search selection dropdown">
+					<input type="hidden" name="country">
+					<i class="dropdown icon"></i>
+					<div class="default text">Select Country</div>
+					<div class="menu">
+						<div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
+						<div class="item" data-value="us"><i class="us flag"></i>United States</div>
+
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-4 outputImage">
+
+			</div>
+		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -19,6 +61,11 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 	 crossorigin="anonymous"></script>
 	<script src="semantic/dist/semantic.min.js"></script>
+	<script type="text/javascript">
+	$('.ui.dropdown')
+	.dropdown();
+	</script>
+
 </body>
 
 </html>
